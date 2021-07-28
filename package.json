@@ -20,7 +20,8 @@
     "src/**/*": [
       "yarn lint --fix",
       "yarn test --findRelatedTests --bail"
-    ]
+    ],
+    "*.js": "eslint --cache --fix"
   },
   "dependencies": {
     "next": "11.0.1",
