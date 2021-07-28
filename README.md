@@ -1,4 +1,5 @@
 This is a [Next.js](https://nextjs.org/) boilerplate with Typescript and Styled-Components.
+![ci](https://github.com/juliocarneiro/boilerplate-next-ts/workflows/ci/badge.svg)
 
 ## What is inside?
 
