@@ -24,7 +24,7 @@
     "*.js": "eslint --cache --fix"
   },
   "dependencies": {
-    "next": "11.0.1",
+    "next": "11.1.0",
     "next-pwa": "^5.2.24",
     "react": "17.0.2",
     "react-dom": "17.0.2",
