@@ -1,11 +1,11 @@
 import styled from 'styled-components'
+import { COLORS } from 'config/colors'
 
 export const Wrapper = styled.main`
-  background-color: #06092b;
-  color: #fff;
+  background-color: ${COLORS.white};
+  color: ${COLORS.black};
   width: 100%;
   height: 100%;
-  padding: 3rem;
   text-align: center;
   display: flex;
   flex-direction: column;
