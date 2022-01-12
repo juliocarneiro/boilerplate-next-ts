@@ -34,11 +34,3 @@ jobs:
 
       - name: Build
         run: yarn build
-        
-      - name: Start containers
-        run: yarn start
-
-      - name: Dynamic Security Testing
-        uses: projectdiscovery/nuclei-action@main
-        with:
-          target: http://localhost:3000
