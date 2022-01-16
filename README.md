@@ -12,14 +12,13 @@ This project uses lot of stuff as:
 - [Eslint](https://eslint.org/)
 - [Prettier](https://prettier.io/)
 - [Husky](https://github.com/typicode/husky)
+- [Snyk](https://github.com/snyk/snyk)
 
 ## Getting Started
 
 First, run the development server:
 
 ```bash
-npm run dev
-# or
 yarn dev
 ```
 
@@ -35,6 +34,7 @@ You can start editing the page by modifying `pages/index.js`. The page auto-upda
 - `lint`: runs the linter in all components and pages
 - `test`: runs jest to test all components and pages
 - `test:watch`: runs jest in watch mode
+- `security`: runs snyk for search vulnerabilities
 
 ## Learn More
 
