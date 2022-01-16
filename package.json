@@ -2,29 +2,6 @@
   "name": "boilerplate-next-ts",
   "version": "1.0.0",
   "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "eslint src --max-warnings=0",
-    "test": "jest --maxWorkers=50%",
-    "test:watch": "jest --watch --maxWorkers=25%",
-    "test:ci": "jest --runInBand",
-    "generate": "yarn plop --plopfile generators/plopfile.js",
-    "postinstall": "husky install",
-    "prepare": "husky install",
-    "cache-clear": "next lint --no-cache",
-    "security": "snyk test",
-    "monitor": "snyk monitor"
-  },
-  "lint-staged": {
-    "src/**/*": [
-      "yarn lint --fix",
-      "yarn test --findRelatedTests --bail",
-      "yarn security"
-    ],
-    "*.js": "eslint --cache --fix"
-  },
   "dependencies": {
     "date-fns": "^2.25.0",
     "next": "12.0.8",
@@ -33,7 +10,7 @@
     "react": "17.0.2",
     "react-dom": "17.0.2",
     "sharp": "^0.29.2",
-    "snyk": "^1.827.0",
+    "@snyk/protect": "^1.657.0",
     "styled-components": "5.3.1"
   },
   "devDependencies": {
@@ -63,5 +40,27 @@
     "plop": "^2.7.4",
     "prettier": "^2.3.2",
     "typescript": "^4.3.5"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint src --max-warnings=0",
+    "test": "jest --maxWorkers=50%",
+    "test:watch": "jest --watch --maxWorkers=25%",
+    "test:ci": "jest --runInBand",
+    "generate": "yarn plop --plopfile generators/plopfile.js",
+    "postinstall": "husky install",
+    "prepare": "husky install",
+    "cache-clear": "next lint --no-cache",
+    "security": "snyk test"
+  },
+  "lint-staged": {
+    "src/**/*": [
+      "yarn lint --fix",
+      "yarn test --findRelatedTests --bail",
+      "yarn security"
+    ],
+    "*.js": "eslint --cache --fix"
   }
 }
