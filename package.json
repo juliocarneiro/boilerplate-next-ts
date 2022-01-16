@@ -54,7 +54,8 @@
     "prepare": "husky install",
     "cache-clear": "next lint --no-cache",
     "security": "snyk test",
-    "protect": "snyk-protect"
+    "protect": "snyk-protect",
+    "lint-staged": "lint-staged"
   },
   "lint-staged": {
     "src/**/*": [
@@ -64,10 +65,5 @@
       "yarn protect"
     ],
     "*.js": "eslint --cache --fix"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
   }
 }
