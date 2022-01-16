@@ -1,3 +1,5 @@
+[![ci](https://github.com/juliocarneiro/boilerplate-next-ts/actions/workflows/ci.yml/badge.svg)](https://github.com/juliocarneiro/boilerplate-next-ts/actions/workflows/ci.yml) <img src="https://img.shields.io/github/last-commit/juliocarneiro/boilerplate-next-ts/master">
+
 This is a [Next.js](https://nextjs.org/) boilerplate with Typescript and Styled-Components.
 
 ## What is inside?
@@ -16,7 +18,13 @@ This project uses lot of stuff as:
 
 ## Getting Started
 
-First, run the development server:
+First, install snyk:
+
+```bash
+yarn global add snyk
+```
+
+Now, run the development server:
 
 ```bash
 yarn dev
@@ -35,6 +43,7 @@ You can start editing the page by modifying `pages/index.js`. The page auto-upda
 - `test`: runs jest to test all components and pages
 - `test:watch`: runs jest in watch mode
 - `security`: runs snyk for search vulnerabilities
+- `protect`: update libs with vulnerabilities
 
 ## Learn More
 
