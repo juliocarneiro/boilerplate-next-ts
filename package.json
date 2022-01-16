@@ -64,5 +64,10 @@
       "yarn protect"
     ],
     "*.js": "eslint --cache --fix"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
   }
 }
