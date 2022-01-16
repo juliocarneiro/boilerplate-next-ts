@@ -61,7 +61,6 @@
     "**/*.ts?(x)": [
       "yarn lint --fix",
       "yarn test --findRelatedTests --bail",
-      "yarn security",
       "yarn protect"
     ],
     "*.js": "yarn lint --fix"
