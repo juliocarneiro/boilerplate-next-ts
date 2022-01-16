@@ -53,13 +53,15 @@
     "postinstall": "husky install",
     "prepare": "husky install",
     "cache-clear": "next lint --no-cache",
-    "security": "snyk test"
+    "security": "snyk test",
+    "protect": "snyk-protect"
   },
   "lint-staged": {
     "src/**/*": [
       "yarn lint --fix",
       "yarn test --findRelatedTests --bail",
-      "yarn security"
+      "yarn security",
+      "yarn protect"
     ],
     "*.js": "eslint --cache --fix"
   }
