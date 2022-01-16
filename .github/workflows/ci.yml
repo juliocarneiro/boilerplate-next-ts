@@ -29,6 +29,9 @@ jobs:
       - name: Linting
         run: yarn lint
 
+      - name: Security
+        run: yarn security
+
       - name: Test
         run: yarn test:ci
 
