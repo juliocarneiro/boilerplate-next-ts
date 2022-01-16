@@ -64,6 +64,6 @@
       "yarn security",
       "yarn protect"
     ],
-    "*.js": "eslint --cache --fix"
+    "*.js": "yarn lint --fix"
   }
 }
