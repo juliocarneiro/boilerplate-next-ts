@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "dependencies": {
+    "@snyk/protect": "^1.657.0",
     "date-fns": "^2.25.0",
     "next": "12.0.8",
     "next-pwa": "^5.2.24",
@@ -10,7 +11,6 @@
     "react": "17.0.2",
     "react-dom": "17.0.2",
     "sharp": "^0.29.2",
-    "@snyk/protect": "^1.657.0",
     "styled-components": "5.3.1"
   },
   "devDependencies": {
