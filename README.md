@@ -18,10 +18,14 @@ This project uses lot of stuff as:
 
 ## Getting Started
 
-First, install snyk:
+First, install snyk and project dependencies:
 
 ```bash
 yarn global add snyk
+```
+
+```bash
+yarn
 ```
 
 Now, run the development server:
