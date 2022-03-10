@@ -46,4 +46,4 @@ jobs:
       run: yarn build
 
     - name: Deploy to S3
-      run: aws s3 sync ./build/ s3://${{ secrets.AWS_PRODUCTION_BUCKET_NAME }} --delete
+      run: aws s3 sync ./out/ s3://${{ secrets.AWS_PRODUCTION_BUCKET_NAME }} --delete
