@@ -6,6 +6,10 @@ on:
       - master
 jobs:
   build:
+    stage: build
+    artifacts:
+    paths:
+      - build/
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v1
@@ -39,13 +43,13 @@ jobs:
     - name: Build
       run: yarn build
 
-    - name: Deploy to S3
-      uses: jakejarvis/s3-sync-action@master
-      with:
-        args: --acl public-read --follow-symlinks --delete
-      env:
-        AWS_S3_BUCKET: ${{ secrets.AWS_PRODUCTION_BUCKET_NAME }}
-        AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
-        AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-        AWS_REGION: ${{ secrets.AWS_REGION }}
-        SOURCE_DIR: "build"
+  deploy:
+    stage: deploy
+    only:
+      - master
+    image: python:latest
+    dependencies:
+      - build
+    script:
+      - pip install awscli
+      - aws s3 cp build/ s3://${{ secrets.AWS_PRODUCTION_BUCKET_NAME }}/ --recursive --include "*"
