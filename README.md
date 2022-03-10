@@ -60,6 +60,6 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 
 ## Deploy on Amazon S3
 
-Automatic deploy to Amazon S3 with github actions and workflows.
+Automatic deploy to Amazon S3 with pipeline in github actions and workflows.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
