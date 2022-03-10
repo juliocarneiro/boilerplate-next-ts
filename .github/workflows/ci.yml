@@ -27,7 +27,7 @@ jobs:
         run: yarn install
 
       - name: Install snyk
-        run: yarn add --global snyk
+        run: yarn global add snyk
 
       - name: Linting
         run: yarn lint
