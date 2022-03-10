@@ -26,14 +26,11 @@ jobs:
       - name: Install dependencies
         run: yarn install
 
-      - name: Install snyk
-        run: yarn global add snyk
-
       - name: Linting
         run: yarn lint
 
       - name: Security
-        run: yarn security
+        run: yarn protect
 
       - name: Test
         run: yarn test
