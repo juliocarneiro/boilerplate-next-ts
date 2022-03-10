@@ -30,10 +30,10 @@ jobs:
         run: yarn lint
 
       - name: Security
-        run: yarn protect
+        run: yarn security
 
       - name: Test
-        run: yarn test:ci
+        run: yarn test
 
       - name: Build
         run: yarn build
