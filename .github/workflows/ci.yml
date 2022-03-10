@@ -6,10 +6,6 @@ on:
       - master
 jobs:
   build:
-    stage: build
-    artifacts:
-    paths:
-      - build/
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v1
@@ -43,13 +39,10 @@ jobs:
     - name: Build
       run: yarn build
 
-  deploy:
-    stage: deploy
-    only:
-      - master
-    image: python:latest
-    dependencies:
-      - build
-    script:
-      - pip install awscli
-      - aws s3 cp build/ s3://${{ secrets.AWS_PRODUCTION_BUCKET_NAME }}/ --recursive --include "*"
+    - name: Deploy to S3
+      uses: shallwefootball/s3-upload-action@master
+      with:
+        aws_key_id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+        aws_secret_access_key: ${{ secrets.AWS_SECRET_ACCESS_KEY}}
+        aws_bucket: ${{ secrets.AWS_PRODUCTION_BUCKET_NAME }}
+        source_dir: 'build'
