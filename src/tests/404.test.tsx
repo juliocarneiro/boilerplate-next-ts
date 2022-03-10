@@ -1,5 +1,5 @@
 import React from 'react'
-import { render, screen } from '../test-utils'
+import { render, screen } from './test-utils'
 import NotFound from 'pages/404'
 
 describe('HomePage', () => {
