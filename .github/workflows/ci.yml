@@ -25,6 +25,7 @@ jobs:
             ${{ runner.os }}-yarn-
       - name: Install dependencies
         run: yarn install
+        run: yarn add global snyk
 
       - name: Linting
         run: yarn lint
