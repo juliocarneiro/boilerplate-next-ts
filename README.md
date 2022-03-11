@@ -56,7 +56,7 @@ docker-compose up
 - `test:watch`: runs jest in watch mode
 - `security`: runs snyk for search vulnerabilities
 - `protect`: update libs with vulnerabilities
-- `generate`: generate component paste with index, test and styled (ex: yarn generate Home)
+- `generate`: generate component paste with index, test and styled (ex: `yarn generate Home`)
 
 ## Learn More
 
