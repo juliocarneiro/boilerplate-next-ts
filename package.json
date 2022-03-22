@@ -5,17 +5,17 @@
   "dependencies": {
     "date-fns": "^2.25.0",
     "next": "12.1.0",
-    "next-pwa": "^5.2.24",
+    "next-pwa": "^5.4.6",
     "nprogress": "^0.2.0",
     "react": "17.0.2",
     "react-dom": "17.0.2",
-    "sharp": "^0.29.2",
+    "sharp": "^0.30.3",
     "styled-components": "5.3.1"
   },
   "devDependencies": {
-    "@snyk/protect": "^1.657.0",
     "@babel/core": "^7.15.0",
     "@babel/preset-typescript": "^7.15.0",
+    "@snyk/protect": "^1.657.0",
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^12.0.0",
     "@types/jest": "^26.0.24",
