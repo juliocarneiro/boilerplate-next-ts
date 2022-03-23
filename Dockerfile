@@ -15,6 +15,7 @@ COPY . /usr/src/app
 
 # Building app
 RUN yarn lint --fix
+RUN yarn security-fix
 RUN yarn build
 EXPOSE 3000
 

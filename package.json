@@ -55,6 +55,7 @@
     "prepare": "husky install",
     "cache-clear": "next lint --no-cache",
     "security": "snyk test",
+    "security-fix": "snyk fix",
     "protect": "snyk-protect",
     "lint-staged": "lint-staged"
   },
@@ -62,7 +63,8 @@
     "**/*.ts?(x)": [
       "yarn lint --fix",
       "yarn test --findRelatedTests --bail",
-      "yarn protect"
+      "yarn protect",
+      "yarn security-fix"
     ],
     "*.js": "yarn lint --fix"
   }
