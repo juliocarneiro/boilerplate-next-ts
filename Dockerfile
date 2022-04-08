@@ -8,6 +8,7 @@ WORKDIR /usr/src/app
 
 # Installing dependencies
 COPY package*.json /usr/src/app/
+COPY yarn.lock /usr/src/app/
 RUN yarn install
 
 # Copying source files
