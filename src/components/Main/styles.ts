@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { COLORS } from 'config/colors'
+import { COLORS } from 'config'
 
 export const Wrapper = styled.main`
   background-color: ${COLORS.white};
