@@ -12,10 +12,8 @@ module.exports = isProd
         domains: ['localhost', 'res.cloudinary.com']
       }
     })
-  : [
-      {
-        images: {
-          domains: ['localhost', 'res.cloudinary.com']
-        }
+  : {
+      images: {
+        domains: ['localhost', 'res.cloudinary.com']
       }
-    ]
+    }
