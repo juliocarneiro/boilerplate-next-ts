@@ -29,6 +29,8 @@ const GlobalStyles = createGlobalStyle`
   }
   body {
     line-height: 1;
+    font-size: 14px;
+    font-family:  ${FONTS.opensans}
   }
   ol, ul {
     list-style: none;
@@ -70,11 +72,6 @@ const GlobalStyles = createGlobalStyle`
   .text-center{
     text-align: center;
   }
-  body {
-    font-size: 14px;
-    font-family:  ${FONTS.opensans}
-  }
-
 `
 
 export default GlobalStyles
