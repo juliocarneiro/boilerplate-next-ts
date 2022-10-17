@@ -1,12 +1,10 @@
 import * as S from './styles'
+import { HEADER } from 'config'
 
-const Main = ({
-  title = 'Boilerplate',
-  description = 'TypeScript, ReactJS, NextJS e Styled Components'
-}) => (
-  <S.Wrapper id="home">
-    <S.Title>{title}</S.Title>
-    <S.Description>{description}</S.Description>
+const Main = () => (
+  <S.Wrapper>
+    <S.Title>{HEADER.title}</S.Title>
+    <S.Description>{HEADER.description}</S.Description>
   </S.Wrapper>
 )
 

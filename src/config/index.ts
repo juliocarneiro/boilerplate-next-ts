@@ -6,6 +6,12 @@ export const COLORS = {
   white: '#ffffff',
   black: '#000000'
 }
+
 export const FONTS = {
   opensans: "'Open Sans', sans-serif"
+}
+
+export const HEADER = {
+  title: 'Boilerplate TS',
+  description: 'TypeScript, ReactJS, NextJS e Styled Components'
 }

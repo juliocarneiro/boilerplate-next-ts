@@ -10,11 +10,6 @@ export default {
   }
 } as ComponentMeta<typeof Main>
 
-const Template: ComponentStory<typeof Main> = (args) => <Main {...args} />
+const Template: ComponentStory<typeof Main> = () => <Main />
 
 export const Default = Template.bind({})
-
-Default.args = {
-  title: 'Boilerplate',
-  description: 'TypeScript, ReactJS, NextJS e Styled Components'
-}
