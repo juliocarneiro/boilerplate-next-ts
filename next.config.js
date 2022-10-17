@@ -11,6 +11,11 @@ const withPWA = require('next-pwa')({
 module.exports = withPWA({
   reactStrictMode: true,
   swcMinify: true,
+  compiler: {
+    removeConsole: {
+      exclude: ['error']
+    }
+  },
   images: {
     domains: ['localhost', 'res.cloudinary.com']
   }

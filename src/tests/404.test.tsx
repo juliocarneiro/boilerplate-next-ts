@@ -1,4 +1,4 @@
-import { render, screen } from './test-utils'
+import { screen, render } from '@testing-library/react'
 import NotFound from 'pages/404'
 
 describe('HomePage', () => {
