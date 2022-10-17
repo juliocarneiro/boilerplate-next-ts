@@ -2,7 +2,6 @@
   "env": {
     "jest": true
   },
-  "types": ["node", "jest", "@testing-library/jest-dom"],
   "compilerOptions": {
     "baseUrl": "src",
     "target": "es5",
