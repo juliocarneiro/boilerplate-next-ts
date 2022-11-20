@@ -1,14 +1,21 @@
-export const COLORS = {
-  primary: '#F5F5F5',
-  secondary: '#FF5500',
-  tertiary: '#4A4A4A',
-  quinary: '#00B99C',
-  white: '#ffffff',
-  black: '#000000'
+export const lightTheme = {
+  colors: {
+    body: '#FFF',
+    text: '#363537',
+    toggleBorder: '#FFF',
+    background: '#363537'
+  },
+  font: "'Open Sans', sans-serif"
 }
 
-export const FONTS = {
-  opensans: "'Open Sans', sans-serif"
+export const darkTheme = {
+  colors: {
+    body: '#363537',
+    text: '#FAFAFA',
+    toggleBorder: '#6B8096',
+    background: '#999'
+  },
+  font: "'Open Sans', sans-serif"
 }
 
 export const HEADER = {

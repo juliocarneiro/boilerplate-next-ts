@@ -1,9 +1,6 @@
 import styled from 'styled-components'
-import { COLORS } from 'config'
 
 export const Wrapper = styled.main`
-  background-color: ${COLORS.white};
-  color: ${COLORS.black};
   width: 100%;
   height: 100%;
   text-align: center;
@@ -11,6 +8,11 @@ export const Wrapper = styled.main`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
+  ${({ theme }) => `
+    background-color: ${theme.colors.background};
+    color: ${theme.colors.body};
+  `}
 `
 
 export const Title = styled.h1`
