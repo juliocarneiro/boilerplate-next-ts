@@ -1,5 +1,5 @@
 import { screen, render } from '@testing-library/react'
-import { lightTheme } from 'config'
+import { lightTheme } from 'theme'
 import NotFound from 'pages/404'
 import { ThemeProvider } from 'styled-components'
 

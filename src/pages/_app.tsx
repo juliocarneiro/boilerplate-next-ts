@@ -2,7 +2,7 @@ import { AppProps } from 'next/app'
 import Head from 'next/head'
 import Router from 'next/router'
 import NProgress from 'nprogress'
-import { lightTheme, darkTheme, HEADER } from 'config'
+import { lightTheme, darkTheme, HEADER } from 'theme'
 
 import GlobalStyles from 'theme/GlobalStyles'
 import { useState } from 'react'
