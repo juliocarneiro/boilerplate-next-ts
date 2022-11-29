@@ -11,5 +11,4 @@ export default {
 } as ComponentMeta<typeof Main>
 
 const Template: ComponentStory<typeof Main> = () => <Main />
-
 export const Default = Template.bind({})

@@ -28,10 +28,7 @@ function App({ Component, pageProps }: AppProps) {
         <link rel="apple-touch-icon" href="/img/icon-512.png" />
         <link rel="manifest" href="/manifest.json" />
         <meta name="theme-color" content="#000" />
-        <meta
-          name="description"
-          content="A simple project starter to work with TypeScript, React, NextJS and Styled Components"
-        />
+        <meta name="description" content={HEADER.description} />
       </Head>
       <button onClick={toggleTheme} className="mode-button">
         {theme == 'light' ? 'LIGHT MODE' : 'DARK MODE'}

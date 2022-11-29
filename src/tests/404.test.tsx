@@ -3,7 +3,7 @@ import { lightTheme } from 'theme'
 import NotFound from 'pages/404'
 import { ThemeProvider } from 'styled-components'
 
-describe('HomePage', () => {
+describe('404', () => {
   it('should render the 404 page', () => {
     render(
       <ThemeProvider theme={lightTheme}>

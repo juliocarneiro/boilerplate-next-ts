@@ -7,12 +7,18 @@ const NotFoundWrapper = styled.div`
   width: 100%;
   justify-content: center;
   align-items: center;
+  p {
+    color: ${({ theme }) => theme.colors.body};
+    b {
+      font-size: 42px;
+    }
+  }
 `
 
 const NotFound = () => (
   <NotFoundWrapper>
     <p className="text-center">
-      <b style={{ fontSize: 42 }}>404</b>
+      <b>404</b>
       <br />
       Página não encontrada.
     </p>

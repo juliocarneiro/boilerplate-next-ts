@@ -8,7 +8,6 @@ export const Wrapper = styled.main`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
   ${({ theme }) => `
     background-color: ${theme.colors.background};
     color: ${theme.colors.body};
