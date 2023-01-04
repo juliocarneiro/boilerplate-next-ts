@@ -1,6 +1,6 @@
 {
   "name": "boilerplate-next-ts",
-  "version": "1.8.0",
+  "version": "2.0.3",
   "private": true,
   "dependencies": {
     "date-fns": "^2.29.3",
