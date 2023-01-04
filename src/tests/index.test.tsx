@@ -1,12 +1,12 @@
 import { screen, render } from '@testing-library/react'
-import { lightTheme } from 'theme'
+import { defaultTheme } from 'theme/defaultTheme'
 import Home from 'pages/index'
 import { ThemeProvider } from 'styled-components'
 
 describe('HomePage', () => {
   it('should render the index page', () => {
     render(
-      <ThemeProvider theme={lightTheme}>
+      <ThemeProvider theme={defaultTheme}>
         <Home />
       </ThemeProvider>
     )

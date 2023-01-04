@@ -2,8 +2,18 @@ import { Story, Meta } from '@storybook/react'
 import {{pascalCase name}} from '.'
 
 export default {
-  title: '{{pascalCase name}}',
-  component: {{pascalCase name}}
+  title: 'Components/{{pascalCase name}}',
+  component: {{pascalCase name}},
+  argTypes: {
+    test: {
+      control: 'function',
+      defaultValue: () => {}
+    },
+    id: {
+      control: 'text',
+      defaultValue: 'test'
+    }
+  }
 } as Meta
 
-export const Default: Story = () => <{{pascalCase name}} />
+export const Default: Story = (args) => <{{pascalCase name}} {...args}/>

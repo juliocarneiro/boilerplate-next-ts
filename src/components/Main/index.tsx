@@ -1,5 +1,5 @@
-import * as S from './styles'
-import { HEADER } from 'theme'
+import * as S from './Main.styles'
+import { HEADER } from 'theme/defaultTheme'
 
 const Main = () => (
   <S.Wrapper>

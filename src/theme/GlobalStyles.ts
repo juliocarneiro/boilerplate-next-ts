@@ -1,16 +1,6 @@
 import { createGlobalStyle } from 'styled-components'
 
-interface ThemeType {
-  colors: {
-    body: string
-    text: string
-    toggleBorder: string
-    background: string
-  }
-  font: string
-}
-
-export const GlobalStyles = createGlobalStyle<{ theme: ThemeType }>`
+export const GlobalStyles = createGlobalStyle<{ theme: any }>`
   html, body, div, span, applet, object, iframe,
   h1, h2, h3, h4, h5, h6, p, blockquote, pre,
   a, abbr, acronym, address, big, cite, code,
@@ -39,7 +29,7 @@ export const GlobalStyles = createGlobalStyle<{ theme: ThemeType }>`
   body {
     line-height: 1;
     font-size: 14px;
-    font-family:  ${(props) => props.theme.font};
+    font-family:  ${(props) => props.theme.fonts.openSans};
     background: ${(props) => props.theme.colors.background}
   }
   ol, ul {
@@ -81,17 +71,6 @@ export const GlobalStyles = createGlobalStyle<{ theme: ThemeType }>`
   }
   .text-center{
     text-align: center;
-  }
-
-  .mode-button{
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    border: 0;
-    background: ${(props) => props.theme.colors.background};
-    color: ${(props) => props.theme.colors.body};
-    font-weight: bold;
-    cursor: pointer;
   }
 
   #nprogress {

@@ -1,12 +1,12 @@
 import { screen, render } from '@testing-library/react'
-import { lightTheme } from 'theme'
+import { defaultTheme } from 'theme/defaultTheme'
 import NotFound from 'pages/404'
 import { ThemeProvider } from 'styled-components'
 
 describe('404', () => {
   it('should render the 404 page', () => {
     render(
-      <ThemeProvider theme={lightTheme}>
+      <ThemeProvider theme={defaultTheme}>
         <NotFound />
       </ThemeProvider>
     )

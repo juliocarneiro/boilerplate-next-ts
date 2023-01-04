@@ -18,6 +18,10 @@ module.exports = {
       ...config.resolve.alias,
       '@': path.resolve(__dirname, '../src/')
     }
+    config.watchOptions = {
+      aggregateTimeout: 200,
+      poll: 1000
+    }
     return config
   }
 }

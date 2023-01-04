@@ -1,13 +1,17 @@
 import { render, screen } from '@testing-library/react'
+import { ThemeProvider } from 'styled-components'
+import { defaultTheme } from 'theme/defaultTheme'
 
 import {{pascalCase name}} from '.'
 
 describe('<{{pascalCase name}} />', () => {
-  it('should render the heading', () => {
-    const { container } = render(<{{pascalCase name}} />)
-
-    expect(screen.getByRole('heading', { name: /{{pascalCase name}}/i })).toBeInTheDocument()
-
-    expect(container.firstChild).toMatchSnapshot()
+  it('should render the {{pascalCase name}} component', () => {
+    render(
+      <ThemeProvider theme={defaultTheme}>
+        <{{pascalCase name}} />
+      </ThemeProvider>
+    )
+    const component = screen.getByTestId('{{pascalCase name}}')
+    expect(component).toBeInTheDocument()
   })
 })
