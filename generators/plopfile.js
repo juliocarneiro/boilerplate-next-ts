@@ -1,13 +1,17 @@
-module.exports = (plop) => {
+module.exports = function (plop) {
   plop.setGenerator('component', {
     description: 'Create a component',
+
+    // inquirer prompts
     prompts: [
       {
         type: 'input',
         name: 'name',
-        message: 'What is your component name?'
+        message: 'What is yr component name?'
       }
     ],
+
+    // actions to perform
     actions: [
       {
         type: 'add',
@@ -16,18 +20,8 @@ module.exports = (plop) => {
       },
       {
         type: 'add',
-        path: '../src/components/{{pascalCase name}}/{{pascalCase name}}.styles.ts',
+        path: '../src/components/{{pascalCase name}}/styles.ts',
         templateFile: 'templates/styles.ts.hbs'
-      },
-      {
-        type: 'add',
-        path: '../src/components/{{pascalCase name}}/{{pascalCase name}}.stories.tsx',
-        templateFile: 'templates/stories.tsx.hbs'
-      },
-      {
-        type: 'add',
-        path: '../src/components/{{pascalCase name}}/{{pascalCase name}}.test.tsx',
-        templateFile: 'templates/test.tsx.hbs'
       }
     ]
   })
